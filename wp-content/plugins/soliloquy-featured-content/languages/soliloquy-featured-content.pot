@@ -1,0 +1,388 @@
+# Copyright (C) 2016 Soliloquy - Featured Content Addon
+# This file is distributed under the same license as the Soliloquy - Featured Content Addon package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Soliloquy - Featured Content Addon 2.4.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/soliloquy-featured-"
+"content\n"
+"POT-Creation-Date: 2016-09-06 17:29:02+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/admin/metaboxes.php:129
+msgid "Continue Reading..."
+msgstr ""
+
+#: includes/admin/metaboxes.php:149
+msgid "Featured Content"
+msgstr ""
+
+#: includes/admin/metaboxes.php:169
+msgid "The settings below adjust the Featured Content settings for the slider."
+msgstr ""
+
+#: includes/admin/metaboxes.php:170
+msgid "Need some help?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:170
+msgid " Watch a video on how to setup your gallery configuration"
+msgstr ""
+
+#: includes/admin/metaboxes.php:173
+msgid "Query Settings"
+msgstr ""
+
+#: includes/admin/metaboxes.php:180
+msgid "Select Your Post Type(s)"
+msgstr ""
+
+#: includes/admin/metaboxes.php:184
+msgid "Select post type(s) to query (defaults to post)..."
+msgstr ""
+
+#: includes/admin/metaboxes.php:198
+msgid "Determines the post types to query."
+msgstr ""
+
+#: includes/admin/metaboxes.php:204
+msgid "Select Your Taxonomy Term(s)"
+msgstr ""
+
+#: includes/admin/metaboxes.php:208
+msgid "Select taxonomy terms(s) to query (defaults to none)..."
+msgstr ""
+
+#: includes/admin/metaboxes.php:226
+msgid ""
+"Determines the taxonomy terms that should be queried based on post type "
+"selection."
+msgstr ""
+
+#: includes/admin/metaboxes.php:232
+msgid "Taxonomy Term(s) Relation"
+msgstr ""
+
+#: includes/admin/metaboxes.php:246
+msgid ""
+"Determines whether all or any taxonomy terms must be present in the above "
+"Posts."
+msgstr ""
+
+#: includes/admin/metaboxes.php:252
+msgid "Include or Exclude?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:259
+msgid "Include"
+msgstr ""
+
+#: includes/admin/metaboxes.php:260
+msgid "Exclude"
+msgstr ""
+
+#: includes/admin/metaboxes.php:263
+msgid " ONLY the items below."
+msgstr ""
+
+#: includes/admin/metaboxes.php:270
+msgid "Select Items?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:275
+msgid "Make your selection (defaults to none)..."
+msgstr ""
+
+#: includes/admin/metaboxes.php:294
+msgid "Will include or exclude ONLY the selected post(s)."
+msgstr ""
+
+#: includes/admin/metaboxes.php:300 includes/global/common.php:142
+msgid "Include Sticky Posts"
+msgstr ""
+
+#: includes/admin/metaboxes.php:313
+msgid "Controls if and how Sticky Posts are displayed within the slider."
+msgstr ""
+
+#: includes/admin/metaboxes.php:314
+msgid ""
+"<strong>Exclude Sticky Posts:</strong> all Sticky Posts that meet the query "
+"criteria set above and below will be excluded.\n"
+msgstr ""
+
+#: includes/admin/metaboxes.php:316
+msgid ""
+"<strong>Include Sticky Posts:</strong> Sticky Posts are treated as ordinary "
+"Posts, and will only appear if they meet the other query criteria set above "
+"and below."
+msgstr ""
+
+#: includes/admin/metaboxes.php:317
+msgid ""
+"<strong>Only Include Sticky Posts:</strong> all Sticky Posts that meet the "
+"query criteria set above and below will be shown. Ordinary (non-Sticky) "
+"Posts will not be displayed.\n"
+msgstr ""
+
+#: includes/admin/metaboxes.php:327
+msgid "Sort Posts By"
+msgstr ""
+
+#: includes/admin/metaboxes.php:339
+msgid "Determines how the posts are sorted in the slider."
+msgstr ""
+
+#: includes/admin/metaboxes.php:345
+msgid "Meta Key"
+msgstr ""
+
+#: includes/admin/metaboxes.php:349
+msgid ""
+"The meta key to use when ordering Posts. Used when Sort Posts By = Meta Value"
+msgstr ""
+
+#: includes/admin/metaboxes.php:355
+msgid "Order Posts By"
+msgstr ""
+
+#: includes/admin/metaboxes.php:366
+msgid "Determines how the posts are ordered in the slider."
+msgstr ""
+
+#: includes/admin/metaboxes.php:372
+msgid "Number of Slides"
+msgstr ""
+
+#: includes/admin/metaboxes.php:376
+msgid "The number of slides in your Featured Content slider."
+msgstr ""
+
+#: includes/admin/metaboxes.php:382
+msgid "Posts Offset"
+msgstr ""
+
+#: includes/admin/metaboxes.php:386
+msgid "The number of posts to offset in the query."
+msgstr ""
+
+#: includes/admin/metaboxes.php:392
+msgid "Post Status"
+msgstr ""
+
+#: includes/admin/metaboxes.php:406
+msgid "Determines the post status to use for the query."
+msgstr ""
+
+#: includes/admin/metaboxes.php:413
+msgid "Disable Caching?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:416
+msgid "Disables caching of query."
+msgstr ""
+
+#: includes/admin/metaboxes.php:427
+msgid "Content Settings"
+msgstr ""
+
+#: includes/admin/metaboxes.php:435
+msgid "Link Image to Post URL?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:439
+msgid "Links the image to the post URL."
+msgstr ""
+
+#: includes/admin/metaboxes.php:445
+msgid "Display Post Title?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:449
+msgid "Displays the post title over the image."
+msgstr ""
+
+#: includes/admin/metaboxes.php:455
+msgid "Link Post Title to Post URL?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:459
+msgid "Links the post title to the post URL."
+msgstr ""
+
+#: includes/admin/metaboxes.php:465
+msgid "Post Content to Display"
+msgstr ""
+
+#: includes/admin/metaboxes.php:476
+msgid "Determines the type of content to retrieve and output in the caption."
+msgstr ""
+
+#: includes/admin/metaboxes.php:482
+msgid "Number of Words in Content"
+msgstr ""
+
+#: includes/admin/metaboxes.php:486
+msgid "Sets the number of words for trimming the post content."
+msgstr ""
+
+#: includes/admin/metaboxes.php:492
+msgid "Append Ellipses to Post Content?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:496
+msgid "Places an ellipses at the end of the post content."
+msgstr ""
+
+#: includes/admin/metaboxes.php:502
+msgid "Output Content as HTML?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:506
+msgid ""
+"If enabled, retrieves the Post Content as HTML, to allow for formatting to "
+"be included in the caption. Uncheck this option if you just want to get the "
+"Post Content as plain text."
+msgstr ""
+
+#: includes/admin/metaboxes.php:512
+msgid "Display Read More Link?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:516
+msgid "Displays a \"read more\" link after the post content."
+msgstr ""
+
+#: includes/admin/metaboxes.php:522
+msgid "Read More Text"
+msgstr ""
+
+#: includes/admin/metaboxes.php:526
+msgid "Sets the read more link text."
+msgstr ""
+
+#: includes/admin/metaboxes.php:532
+msgid "Fallback Image URL"
+msgstr ""
+
+#: includes/admin/metaboxes.php:536
+msgid "Insert Image"
+msgstr ""
+
+#: includes/admin/metaboxes.php:537
+msgid "This image URL is used if no image URL can be found for a post."
+msgstr ""
+
+#: includes/admin/metaboxes.php:543
+msgid "Disable get_post_classes()?"
+msgstr ""
+
+#: includes/admin/metaboxes.php:547
+msgid ""
+"If checked, disables appending CSS classes generated by get_post_classes() "
+"for each Post's slide. Use this if your Posts have a large number of "
+"taxonomy terms, taxonomies etc, for better performance."
+msgstr ""
+
+#: includes/global/common.php:116
+msgid "Posts must have ALL of the above taxonomy terms (AND)"
+msgstr ""
+
+#: includes/global/common.php:117
+msgid "Posts must have ANY of the above taxonomy terms (IN)"
+msgstr ""
+
+#: includes/global/common.php:138
+msgid "Exclude Sticky Posts"
+msgstr ""
+
+#: includes/global/common.php:146
+msgid "Only Include Sticky Posts (ignores all other settings)"
+msgstr ""
+
+#: includes/global/common.php:166
+msgid "Date"
+msgstr ""
+
+#: includes/global/common.php:170
+msgid "ID"
+msgstr ""
+
+#: includes/global/common.php:174
+msgid "Author"
+msgstr ""
+
+#: includes/global/common.php:178
+msgid "Title"
+msgstr ""
+
+#: includes/global/common.php:182
+msgid "Menu Order"
+msgstr ""
+
+#: includes/global/common.php:186
+msgid "Random"
+msgstr ""
+
+#: includes/global/common.php:190
+msgid "Comment Count"
+msgstr ""
+
+#: includes/global/common.php:194
+msgid "Post Name"
+msgstr ""
+
+#: includes/global/common.php:198
+msgid "Modified Date"
+msgstr ""
+
+#: includes/global/common.php:202
+msgid "Meta Value"
+msgstr ""
+
+#: includes/global/common.php:206
+msgid "Meta Value (Numeric)"
+msgstr ""
+
+#: includes/global/common.php:226
+msgid "Descending Order"
+msgstr ""
+
+#: includes/global/common.php:230
+msgid "Ascending Order"
+msgstr ""
+
+#: includes/global/common.php:264
+msgid "No Content"
+msgstr ""
+
+#: includes/global/common.php:268
+msgid "Post Content"
+msgstr ""
+
+#: includes/global/common.php:272
+msgid "Post Excerpt"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Soliloquy - Featured Content Addon"
+msgstr ""
+
+#. #-#-#-#-#  soliloquy-featured-content.pot (Soliloquy - Featured Content Addon 2.4.2)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  soliloquy-featured-content.pot (Soliloquy - Featured Content Addon 2.4.2)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://soliloquywp.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Enables featured content sliders in Soliloquy."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Soliloquy Team"
+msgstr ""
