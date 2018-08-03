@@ -1,8 +1,6 @@
 jQuery(document).ready(function($)  {
-	
-/* Accordion Content */	
-	
-	 $('.accordion-item-title').click(function() {	 
+/* Accordion Content */
+	 $('.accordion-item-title').click(function() {
 		 if ($(this).parent().is('.open')){
 			 $(this).closest('.accordion-content').find('.accordion-item-text').animate({'height':'0'},500);
 			 $(this).closest('.accordion-content').removeClass('open');
@@ -15,8 +13,6 @@ jQuery(document).ready(function($)  {
 			 $(this).parent().find('.accordion-button-icon').removeClass('fa-plus').addClass('fa-minus');
 		}	 
 	 });
-	 	 
-	 
 });
 
 

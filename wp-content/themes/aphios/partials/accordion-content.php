@@ -1,20 +1,22 @@
-<?php
-	
-	
-	
-			echo '<div class="accordion-content clear">';
-			echo '<div class="accordion-item-title">';
-			if(get_sub_field('item_title_description')) {
-			echo '<div class="accordion-float-left"><p class="accordion-item-title-description" >' . get_sub_field('item_title_description') . '</p>';
-			}
-			echo '<span class="accordion-item-title-wrap">' . get_sub_field('item_title') . '</span>';
-			if(get_sub_field('item_title_description')) {
-			echo '</div>';
-			}
-			echo '<span class="accordion-button-icon fa fa-plus"></span></div>';
-			
-			echo '<div class="accordion-item-text"><div class="accordion-item-text-wrap"><span>' . get_sub_field('item_text') . '</span></div></div>';
-			echo '</div>';
-	
-				
-?>			
+<div class="accordion-content clear">
+    <div class="accordion-item-title">
+        <?php
+        if (get_sub_field('item_title_description')) {
+        ?>
+        <div class="accordion-float-left">
+            <p class="accordion-item-title-description">
+                <?php the_sub_field('item_title_description'); ?>
+            </p>
+        <?php } ?>
+        <span class="accordion-item-title-wrap">
+            <?php the_sub_field('item_title'); ?>
+        </span>
+        <?php if (get_sub_field('item_title_description')) { ?>
+            </div>
+        <?php } ?>
+        <span class="accordion-button-icon fa fa-plus"></span>
+    </div>
+    <div class="accordion-item-text">
+        <div class="accordion-item-text-wrap"><span><?php the_sub_field('item_text'); ?></span></div>
+    </div>
+</div>

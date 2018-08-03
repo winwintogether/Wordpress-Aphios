@@ -1,5 +1,3 @@
-<?php
-
-echo '<div class="layout-full-width clear">'.get_sub_field('block').'</div>';
-
-?>
+<div class="layout-full-width clear">
+    <?php the_sub_field('block');?>
+</div>

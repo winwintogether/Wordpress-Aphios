@@ -48,12 +48,9 @@ function sk_custom_post_nav() {
 	endif;
 	echo '</div>';
 
-
-
 	echo '<div class="next-post-link" style="float:right">';
 	if ( $index != ( count( $ids ) - 1 ) ):
 		echo '<a href="' . get_permalink( $next_id ) . '">Next &raquo;</a>';
-
 	endif;
 	echo '</div>';
 	echo '</div>';

@@ -7,25 +7,16 @@
 //* Add custom body class to the head
 add_filter( 'body_class', 'custom_body_class' );
 function custom_body_class( $classes ) {
-	
 	$classes[] = 'slider-template';
 	return $classes;
-	
 }
-
-
 
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
-
-
 //* Add Slider
 add_action( 'genesis_after_header', 'slider_template_after_header', 8 );
-
 function slider_template_after_header() {
-	
-	
 		// If at least 1 image is present in the Project Images Gallery field
 		if( $images = get_field('slider_images') ) {
 			$image_ids = wp_list_pluck( $images, 'id' );
@@ -48,10 +39,6 @@ function slider_template_after_header() {
 		} else {
 			echo '<img src="'. get_stylesheet_directory_uri() .'/images/MacDougall-DefaultBanner.jpg" alt="MacDougall - Kithcen" />';
 		}
-		
 }
-
-
-
 
 genesis();

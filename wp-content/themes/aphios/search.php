@@ -29,19 +29,13 @@ function custom_body_class( $classes ) {
 		$classes[] = 'search';
 		return $classes;
 	}
-
-	
 }
 
 //* Force content-sidebar layout setting
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_content_sidebar' );
-
 function genesis_do_search_title() {
-
 	$title = sprintf( '<div class="archive-description"><h1 class="archive-title">%s %s</h1></div>', apply_filters( 'genesis_search_title_text', __( 'Search Results for:', 'genesis' ) ), get_search_query() );
-
 	echo apply_filters( 'genesis_search_title_output', $title ) . "\n";
-
 }
 
 genesis();

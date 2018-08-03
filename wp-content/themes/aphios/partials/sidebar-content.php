@@ -1,21 +1,11 @@
-<?php
-	
+<div class="clear">
+    <div class="one-third first">
+        <?php the_sub_field('sidebar_block'); ?>
+    </div>
+    <div class="two-thirds">
+        <?php the_sub_field('content_block'); ?>
+    </div>
+</div>
 
-
-				echo '<div class="clear">';
-				
-				echo '<div class="one-third first">'.get_sub_field('sidebar_block').'</div>';
-				
-				
-        		echo '<div class="two-thirds">';
-        		
-				the_sub_field('content_block');	
-				echo '</div>';
-				
-				echo '</div>';
-				
-				
-	
-?>			
 
 
