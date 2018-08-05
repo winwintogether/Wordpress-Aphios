@@ -7,15 +7,17 @@
 	display: inline-block;
 	position: relative;
 	margin-right: 2px;
+	float: right;
 }
 .widget_collapsible_pages_widget .toggle {
 	cursor: pointer;
 }
 .widget_collapsible_pages_widget ul.children {
-	padding-left: 0;
+	padding-left: 10px !important;
+	margin-left: 0;
 }
 .widget_collapsible_pages_widget li {
-	border-bottom: 1px solid #e4e4e4;
+	border-bottom: 1px dashed #e4e4e4;
 }
 .widget_collapsible_pages_widget li:last-child {
 	border-bottom: none;
@@ -27,4 +29,7 @@
 }
 .widget_collapsible_pages_widget .hidden {
 	display: none;
+}
+.widget_collapsible_pages_widget a.active {
+	font-weight: 800;
 }

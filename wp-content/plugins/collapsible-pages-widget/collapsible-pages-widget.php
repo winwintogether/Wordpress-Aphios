@@ -5,6 +5,7 @@
  * Version: 1.1.2
  * Author: XinHongLee
  */
+
 namespace xinhonglee;
 
 defined("ABSPATH") or die("No script kiddies please!");
@@ -28,6 +29,7 @@ function pluck_keys(array $arr, array $keys)
  */
 class CollapsiblePagesWidget extends \WP_Widget
 {
+    private $selected_ids = [];
     /**
      * Sets up the widgets name etc
      */
@@ -52,25 +54,45 @@ class CollapsiblePagesWidget extends \WP_Widget
         if (!empty($instance["title"])) {
             echo $args["before_title"] . apply_filters("widget_title", $instance["title"]) . $args["after_title"];
         }
-        $pages = $this->get_pages_recursive(0, array(
-            "exclude" => $instance["exclude"],
-            "sort_column" => $instance["sort_column"],
-            "sort_order" => $instance["sort_order"]
-        ));
+        if (is_page()) {
+            global $post;
+            $id = $post->ID;
+            array_push($this->selected_ids, $id);
+            while (wp_get_post_parent_id($id)) {
+                $id = wp_get_post_parent_id($id);
+                array_push($this->selected_ids, $id);
+            }
+            $pages = $this->get_pages_recursive($id, array(
+                "exclude" => $instance["exclude"],
+                "sort_column" => $instance["sort_column"],
+                "sort_order" => $instance["sort_order"]
+            ));
 
-        echo $this->print_pages_recursive($pages, array(
-                "show_threshold" => 0,
-                "color" => $instance["color"]
-            )
-        )->toHtml(true);
-        $expand_to_id = get_the_ID();
-        echo <<<HERE
-            <script>
-                jQuery(document).on("collapsible_pages_ready",function(){
-                    expand_to_page($expand_to_id)
-                });
-            </script>
-HERE;
+            if(count($pages)>0){
+                echo $this->print_pages_recursive($pages, array(
+                        "show_threshold" => 0,
+                        "color" => $instance["color"]
+                    )
+                )->toHtml(true);
+                $expand_to_id = get_the_ID();
+                echo '<script>
+                    jQuery(document).on("collapsible_pages_ready",function(){
+                        expand_to_page(' . $expand_to_id . ')
+                    });
+                  </script>';
+            } else {
+                echo '
+                    <style>
+                        main.content {
+                          width: 100% !important;
+                        }
+                        .sidebar {
+                          display: none !important;   
+                        }
+                    </style>
+                ';
+            }
+        }
         echo $args["after_widget"];
     }
 
@@ -249,7 +271,6 @@ HERE;
         ), $options);
         if ($level > $options["show_threshold"])
             $ul->addClass("hidden");
-
         foreach ($pages as $page) {
             $li = new Node("li", array(
                 "class" => array("page_item", "page-item-" . $page->ID),
@@ -263,6 +284,9 @@ HERE;
                 )
             );
             $a->addText($page->post_title);
+            if( in_array($page->ID, $this->selected_ids) ){
+                $a->addClass("active");
+            }
             $li->addChild($a);
             if (isset($page->children)) {
                 $li->addClass("page_item_has_children");
@@ -295,8 +319,8 @@ HERE;
 }
 
 add_action("wp_enqueue_scripts", function () {
-    wp_enqueue_style("cpw-style", plugins_url("style.css", __FILE__), '', '1.2');
-    wp_enqueue_script("cpw-js", plugins_url("script.js", __FILE__), array("jquery"));
+    wp_enqueue_style("cpw-style", plugins_url("style.css", __FILE__), '', '1.10');
+    wp_enqueue_script("cpw-js", plugins_url("script.js", __FILE__), array("jquery"),'1.10');
 });
 
 add_action("widgets_init", function () {

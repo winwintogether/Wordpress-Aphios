@@ -85,10 +85,6 @@ function default_template_secondary_page_header()
         echo '<div class="entry-title" itemprop="headline"><h1>' . $page_title . '</h1></div>';
     endif;
 }
-add_action("genesis_before_sidebar_widget_area", 'custom_sidebar_style');
-function custom_sidebar_style() {
-
-}
 
 genesis();
 
